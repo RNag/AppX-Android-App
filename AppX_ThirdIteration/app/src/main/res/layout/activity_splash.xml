@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:id="@+id/RelLayout">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!--android:background="@layout/header_gradient" -->
+            <!-- Logo Start-->
+            <!-- <ImageView android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"/> -->
+            <!-- Logo Ends -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="What&apos;s Going On?"
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Welcome!"
+                android:id="@+id/welcomeUser"
+                android:layout_marginLeft="16dp"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header"
+            android:id="@+id/body"
+            android:weightSum="1"
+            android:layout_above="@+id/footer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/HomePage"
+                android:id="@+id/textView25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/testVal"
+                android:layout_marginTop="44dp" />
+
+            <Button
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:text="@string/EventsLink"
+                android:id="@+id/link_to_events"
+                android:onClick="onClick"
+                android:layout_weight="0.14"
+                android:background="#7ab6c4"
+                android:textColor="#f9ffe9" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:text="@string/Filter"
+                android:id="@+id/button6"
+                android:layout_marginTop="-65dp"
+                android:onClick="onClick"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:background="#aaf1be"
+                android:textColor="#cf282e28" />
+
+            <Button
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:text="@string/AddEvent"
+                android:id="@+id/link_to_newEvent"
+                android:onClick="onClick"
+                android:layout_weight="0.09"
+                android:background="#c327cbae"
+                android:textColor="#f9ffe9"
+                android:layout_marginTop="40dp" />
+
+            <Button
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:text="@string/Settings"
+                android:id="@+id/link_to_settings"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:onClick="onClick"
+                android:background="#aaf1be"
+                android:textColor="#cf282e28"
+                android:layout_marginTop="-85dp" />
+
+        </LinearLayout>
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <!-- Footer Ends -->
+    </RelativeLayout>
+
+</ScrollView>

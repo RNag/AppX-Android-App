@@ -1,0 +1,95 @@
+<resources>
+
+    <string name = "test1">Some text </string>
+
+    <string-array name="ColumnSearch_values">
+        <item>EventID</item>
+        <item>Title</item>
+        <item>Sponsor / Org.</item>
+        <item>Date</item>
+        <item>What</item>
+    </string-array>
+
+    <string-array name="HourValues">
+        <item>00</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="MinValues">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
+    <string-array name="PeriodValues">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <string-array name="Prefix">
+        <item>--</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+
+    <string-array name="edLevel_values">
+        <item>--</item>
+        <item>High School Diploma</item>
+        <item>B.S. (Bachelor of Science)</item>
+        <item>M.S. (Masters)</item>
+        <item>Some College</item>
+    </string-array>
+
+
+    <string name="app_name">What\'s Going On?</string>
+    <string name="title_activity_login">AppX : Login</string>
+    <string name="title_activity_register">AppX : Register</string>
+    <string name="loginButton">Log In</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="valButton">Validate</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_list">ListActivity</string>
+
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Events</string>
+    <string name="title_section3">Opportunities</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="AddEventHeader">What\'s Going On Around You</string>
+    <string name="Who">Who:</string>
+    <string name="What">What:</string>
+    <string name="How">How:</string>
+    <string name="MoreEvents">More Events Like This? #</string>
+    <string name="Done">DONE</string>
+    <string name="RegisterLink">New to What\'s Going On? Click here.</string>
+    <string name="LoginHeader">Please login below.</string>
+    <string name="Email">E-mail</string>
+    <string name="DefaultUsername">jsmith@vcu.edu</string>
+    <string name="Password">Password</string>
+    <string name="DefaultPassword">Password</string>
+    <string name="HomePage">Home Page</string>
+    <string name="EventsLink">Local Events</string>
+    <string name="Filter">Filter</string>
+    <string name="Search">Search</string>
+    <string name="AddEvent">ADD AN EVENT</string>
+    <string name="Settings">Settings</string>
+    <string name="Register">Register</string>
+</resources>

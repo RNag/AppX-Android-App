@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#006699"
+        android:layout_height="140dp"
+        android:layout_width="match_parent"
+    android:id="@+id/RLayout"
+    android:paddingTop="10dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SingleDay_check"
+            android:checked="false"
+            android:textColorLink="#3971ff"
+            android:textColorHighlight="#f0ff67"
+            android:textColorHint="#5dffe7"
+            android:textColor="#FFFFFFFF"
+            android:layout_alignTop="@+id/SingleDay"
+            android:layout_toRightOf="@+id/SingleDay"
+            android:layout_toEndOf="@+id/SingleDay"
+            android:layout_marginTop="-5dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/edit_fromWhen"
+            android:inputType="datetime"
+            android:singleLine="true"
+            android:layout_below="@+id/SingleDay_check"
+            android:layout_toRightOf="@+id/SingleDay"
+            android:layout_toEndOf="@+id/SingleDay"
+            android:layout_marginLeft="-30dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/edit_toWhen"
+            android:inputType="datetime"
+            android:singleLine="true"
+            android:layout_below="@+id/edit_fromWhen"
+            android:layout_toRightOf="@+id/SingleDay"
+            android:layout_toEndOf="@+id/SingleDay"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-30dp" />
+
+        <Spinner
+            android:id="@+id/fromHourSpinner"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:scrollIndicators="bottom|top"
+            android:background="@drawable/edittext_bg2"
+            android:layout_alignBottom="@+id/edit_fromWhen"
+            android:layout_toLeftOf="@+id/textView47"
+            android:layout_toStartOf="@+id/textView47"
+            android:layout_marginBottom="4dp"
+            android:foregroundTint="#FFFFFFFF" />
+
+        <Spinner
+            android:id="@+id/fromMinSpinner"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/fromHourSpinner"
+            android:background="@drawable/edittext_bg2"
+            android:layout_toLeftOf="@+id/fromPeriodSpinner" />
+
+        <Spinner
+            android:id="@+id/fromPeriodSpinner"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignTop="@+id/fromMinSpinner"
+            android:layout_alignBottom="@+id/fromMinSpinner" />
+
+        <Spinner
+            android:id="@+id/toHourSpinner"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:scrollIndicators="bottom|top"
+            android:background="@drawable/edittext_bg2"
+            android:layout_alignBottom="@+id/To"
+            android:layout_alignLeft="@+id/fromHourSpinner"
+            android:layout_alignStart="@+id/fromHourSpinner" />
+
+        <Spinner
+            android:id="@+id/toMinSpinner"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_bg2"
+            android:layout_alignBottom="@+id/To"
+            android:layout_toRightOf="@+id/textView50"
+            android:layout_toLeftOf="@+id/toPeriodSpinner"
+            android:layout_toStartOf="@+id/toPeriodSpinner" />
+
+        <Spinner
+            android:id="@+id/toPeriodSpinner"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/To"
+            android:layout_toRightOf="@+id/fromMinSpinner"
+            android:layout_toEndOf="@+id/fromMinSpinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=":"
+            android:id="@+id/textView47"
+            android:textColor="#FFFFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/fromMinSpinner"
+            android:layout_toLeftOf="@+id/fromMinSpinner"
+            android:layout_toStartOf="@+id/fromMinSpinner"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="-2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="From :"
+            android:id="@+id/From"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/fromHourSpinner"
+            android:layout_alignLeft="@+id/SingleDay"
+            android:layout_alignStart="@+id/SingleDay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="To :"
+            android:id="@+id/To"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/edit_toWhen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=":"
+            android:id="@+id/textView50"
+            android:textColor="#FFFFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/toHourSpinner"
+            android:layout_toRightOf="@+id/toHourSpinner"
+            android:layout_toEndOf="@+id/toHourSpinner"
+            android:layout_marginTop="-5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Single Day"
+            android:id="@+id/SingleDay"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/To"
+            android:layout_alignStart="@+id/To"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hide End Date"
+            android:id="@+id/HideDate"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/fromMinSpinner"
+            android:layout_alignEnd="@+id/fromMinSpinner" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HideDate_check"
+            android:checked="false"
+            android:textColorLink="#3971ff"
+            android:textColorHighlight="#f0ff67"
+            android:textColorHint="#5dffe7"
+            android:textColor="#FFFFFFFF"
+            android:layout_above="@+id/edit_fromWhen"
+            android:layout_alignLeft="@+id/fromPeriodSpinner"
+            android:layout_alignStart="@+id/fromPeriodSpinner"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="-5dp" />
+    </RelativeLayout>

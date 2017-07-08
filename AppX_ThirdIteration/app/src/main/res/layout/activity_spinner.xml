@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout tools:context=".ProfileSettings" android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Spinner android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/tvSpinner" android:id="@+id/spinStudent_Simple"/>
+
+    <Spinner android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/tvStudent" android:id="@+id/spinStudent"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:id="@+id/tvSpinner" android:layout_alignParentTop="true" android:text="Spinner Simple"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/spinStudent_Simple" android:id="@+id/tvStudent" android:text="Spinner"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/spinStudent" android:id="@+id/mName" android:text="Name" android:layout_marginTop="32dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/mName" android:id="@+id/mAge" android:text="Age" android:layout_marginTop="38dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_below="@+id/mAge" android:id="@+id/mEmail" android:text="Email" android:layout_marginTop="38dp"/>
+
+</RelativeLayout>

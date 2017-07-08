@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#006699"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+    android:id="@+id/RLayout"
+    android:paddingLeft="20dp">
+
+    <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/edit_AddressLine"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textPostalAddress"
+        android:layout_toRightOf="@+id/edit_cityName"
+        android:layout_marginLeft="-100dp"
+        android:layout_alignRight="@+id/editState"
+        android:layout_alignEnd="@+id/editState"
+        android:layout_marginRight="-10dp" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/edit_cityName"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:layout_below="@+id/edit_AddressLine"
+            android:layout_toRightOf="@+id/From"
+            android:layout_marginLeft="-25dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address:"
+            android:id="@+id/From"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_above="@+id/edit_cityName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="City:"
+            android:id="@+id/To"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/edit_cityName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="State:"
+        android:id="@+id/textView27"
+        android:textColor="#FFFFFFFF"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:layout_alignTop="@+id/To"
+        android:layout_toRightOf="@+id/edit_cityName"
+        android:layout_toEndOf="@+id/edit_cityName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/editState"
+        android:inputType="textCapCharacters|datetime"
+        android:singleLine="true"
+        android:layout_below="@+id/edit_AddressLine"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

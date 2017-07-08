@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:background="#FFFFFFFF"
+    android:id="@+id/profileLayout">
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/listLayout2" android:shrinkColumns="*" android:stretchColumns="*" android:layout_margin="5dp" android:orientation="vertical"> </TableLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editWhen" android:textSize="@dimen/abc_action_bar_content_inset_material" android:layout_centerHorizontal="true"
+        android:text="On" android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/profileHeader" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editWhere" android:textSize="@dimen/abc_action_bar_content_inset_material" android:layout_centerHorizontal="true" android:layout_below="@+id/fillWhen" android:text="At" android:textColor="#FFFFFF"
+        android:layout_marginTop="50dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/profileHeader" android:textSize="40dp" android:hint="Event Name" android:layout_alignStart="@+id/listLayout2" android:layout_alignLeft="@+id/listLayout2" android:layout_alignEnd="@+id/listLayout2" android:layout_alignRight="@+id/listLayout2"
+        android:textColor="#ebebeb"
+        android:text="Your Profile" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/fillWhen"
+        android:hint="Date"
+        android:gravity="center|center_horizontal"
+        android:text="Sex"
+        android:textColor="#6375e7"
+        android:layout_above="@+id/lastName"
+        android:layout_toLeftOf="@+id/editWhere"
+        android:layout_toStartOf="@+id/editWhere"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/fillEdLevel"
+        android:hint="Some College"
+        android:layout_alignTop="@+id/fillOrg"
+        android:layout_alignLeft="@+id/stateHeader"
+        android:layout_alignStart="@+id/stateHeader"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBottom="@+id/fillOrg"
+        android:layout_alignRight="@+id/fillDescription"
+        android:layout_alignEnd="@+id/fillDescription" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="120dp" android:id="@+id/fillDescription"
+        android:hint="full description"
+        android:layout_alignEnd="@+id/listLayout2" android:layout_alignRight="@+id/listLayout2" android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/fromHeader"
+        android:layout_alignStart="@+id/fromHeader"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromHeader"
+        android:textSize="12sp"
+        android:text="Full Name"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/editWhen"
+        android:layout_alignLeft="@+id/profileHeader"
+        android:layout_alignStart="@+id/profileHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toHeader"
+        android:textSize="12sp"
+        android:text="Age"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/editWhen"
+        android:layout_toLeftOf="@+id/fillAge"
+        android:layout_toStartOf="@+id/fillAge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:text="John"
+        android:layout_below="@+id/fillWhen"
+        android:layout_alignLeft="@+id/fromHeader"
+        android:layout_alignStart="@+id/fromHeader"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fillGender"
+        android:text="M"
+        android:layout_alignTop="@+id/lastName"
+        android:layout_alignRight="@+id/fillWhen"
+        android:layout_alignEnd="@+id/fillWhen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fillAge"
+        android:hint="21"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_alignTop="@+id/fillGender"
+        android:layout_alignRight="@+id/profileHeader"
+        android:layout_alignEnd="@+id/profileHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressHeader"
+        android:textSize="12sp"
+        android:text="Occupation"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/editWhere"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityHeader"
+        android:textSize="12sp"
+        android:text="University / Org."
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/editWhere"
+        android:layout_alignRight="@+id/editWhen"
+        android:layout_alignEnd="@+id/editWhen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stateHeader"
+        android:textSize="12sp"
+        android:text="Education Level"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_above="@+id/fillOccupation"
+        android:layout_alignLeft="@+id/toHeader"
+        android:layout_alignStart="@+id/toHeader"
+        android:layout_marginLeft="-20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/fillOccupation"
+        android:layout_below="@+id/addressHeader"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/addressHeader"
+        android:layout_alignStart="@+id/addressHeader"
+        android:layout_toStartOf="@+id/cityHeader"
+        android:hint="Unspecified"
+        android:layout_toLeftOf="@+id/cityHeader"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fillOrg"
+        android:layout_alignTop="@+id/fillOccupation"
+        android:layout_alignBottom="@+id/fillOccupation"
+        android:layout_alignLeft="@+id/cityHeader"
+        android:layout_alignStart="@+id/cityHeader"
+        android:layout_marginLeft="8dp"
+        android:hint="Organization name"
+        android:layout_toLeftOf="@+id/fillEdLevel"
+        android:layout_toStartOf="@+id/fillEdLevel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fillEmail"
+        android:hint="this@valid_email.com"
+        android:gravity="center|center_horizontal"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:text="Smith"
+        android:layout_below="@+id/fromHeader"
+        android:layout_toRightOf="@+id/firstName"
+        android:layout_toEndOf="@+id/firstName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textSize="12sp"
+        android:text="Email address"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_below="@+id/fillOccupation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textSize="12sp"
+        android:text="About me"
+        android:textColor="#6375e7"
+        android:textStyle="italic"
+        android:layout_above="@+id/fillDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
